@@ -23,7 +23,6 @@ class AuthenticationRepository {
   Future<Either<String, String>> login(
     String accessToken,
   ) async {
-    //TODO: implement here getting of token from server using Google login
     const Either<String, String> result = Right('token_from_server');
     if (result.isRight) {
       _tokenRepository.accessToken = accessToken;
